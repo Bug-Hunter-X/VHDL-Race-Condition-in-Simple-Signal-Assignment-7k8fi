@@ -1,0 +1,3 @@
+This repository demonstrates a common but subtle race condition in VHDL signal assignments. The `bug.vhdl` file contains code that exhibits the issue.  The `bugSolution.vhdl` file provides a corrected version.
+
+The bug arises from potential delays within the process. While seemingly simple, the order of assignments within the `rising_edge` block is crucial for correct operation.  Improper ordering might prevent expected data propagation, leading to erroneous output.
